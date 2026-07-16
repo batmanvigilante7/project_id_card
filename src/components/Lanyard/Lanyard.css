@@ -1,0 +1,20 @@
+.lanyard-wrapper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transform-origin: center;
+  /* Prevent the page from scrolling/selecting text while a finger is
+     dragging the card around on touch devices. */
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.lanyard-wrapper canvas {
+  touch-action: none;
+}
